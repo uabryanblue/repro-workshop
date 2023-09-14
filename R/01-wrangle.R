@@ -39,6 +39,8 @@ filepaths <- vapply(
   FUN = readr_example,
   FUN.VALUE = character(1)
 )
+
+# can use here package to ensure you are staying within relative paths
 require("here")
 library("here")
 here("R", "gapminder_DATA.csv")
